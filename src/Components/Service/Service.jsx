@@ -7,6 +7,8 @@ import { SiAdobephotoshop } from "react-icons/si";
 import { MdCamera } from "react-icons/md";
 import { MdEditSquare } from "react-icons/md";
 import { BiSolidVideoPlus } from "react-icons/bi";
+import { motion } from "framer-motion";
+import { fadIn } from "../../Animation/variants";
 
 const Service = (props) => {
   return (
@@ -23,7 +25,13 @@ const Service = (props) => {
         </div>
 
         <div className="serviceContainer">
-          <div className="serviceCard">
+          <motion.div
+            variants={fadIn("up", 0.3)}
+            initial="hide"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="serviceCard"
+          >
             <i>
               <FaCode />
             </i>
@@ -31,9 +39,15 @@ const Service = (props) => {
             <p className="servicedesc">
               By using HTML, CSS, JavaScript, ReactJs, Bootstrap, Tailwind
             </p>
-          </div>
+          </motion.div>
 
-          <div className="serviceCard">
+          <motion.div
+            variants={fadIn("up", 0.4)}
+            initial="hide"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="serviceCard"
+          >
             <i>
               <SiAdobephotoshop />
             </i>
@@ -41,17 +55,29 @@ const Service = (props) => {
             <p className="servicedesc">
               By using Adobe Photoshop & Illustrator
             </p>
-          </div>
+          </motion.div>
 
-          <div className="serviceCard">
+          <motion.div
+            variants={fadIn("up", 0.5)}
+            initial="hide"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="serviceCard"
+          >
             <i>
               <IoIosColorPalette />
             </i>
             <p className="servicename">UI/UX Design</p>
             <p className="servicedesc">By using Adobe XD & Figma</p>
-          </div>
+          </motion.div>
 
-          <div className="serviceCard">
+          <motion.div
+            variants={fadIn("up", 0.3)}
+            initial="hide"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="serviceCard"
+          >
             <i>
               <MdCamera />
             </i>
@@ -59,17 +85,29 @@ const Service = (props) => {
             <p className="servicedesc">
               Portrait, Nature, WildLife, Street-Photography
             </p>
-          </div>
+          </motion.div>
 
-          <div className="serviceCard">
+          <motion.div
+            variants={fadIn("up", 0.4)}
+            initial="hide"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="serviceCard"
+          >
             <i>
               <MdEditSquare />
             </i>
             <p className="servicename">Photo Editing</p>
             <p className="servicedesc">By Using Photoshop And Lightroom</p>
-          </div>
+          </motion.div>
 
-          <div className="serviceCard">
+          <motion.div
+            variants={fadIn("up", 0.5)}
+            initial="hide"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="serviceCard"
+          >
             <i>
               <BiSolidVideoPlus />
             </i>
@@ -77,7 +115,7 @@ const Service = (props) => {
             <p className="servicedesc">
               Classic Shot, Drone Shot, Indoor & Outdoor{" "}
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

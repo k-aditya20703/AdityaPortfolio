@@ -29,6 +29,7 @@
   background-color: #252525;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   font-size: large;
   border-radius: 5rem;
   gap: 1.5rem;
@@ -45,11 +46,6 @@
   padding: 0.2rem;
   transition: 0.3s;
   cursor: pointer;
-}
-
-.sideNav i:hover {
-  background-color: white;
-  color: black;
 }
 
 .left_section {

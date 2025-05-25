@@ -6,6 +6,8 @@ import { MdEmail } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
+import { motion } from "framer-motion";
+import { fadIn } from "../../Animation/variants";
 
 const Contact = (props) => {
   return (
@@ -22,7 +24,13 @@ const Contact = (props) => {
         </div>
 
         <div className="contactContainer">
-          <div className="contactDetails">
+          <motion.div
+            variants={fadIn("right", 0.3)}
+            initial="hide"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="contactDetails"
+          >
             <h2>Let's Work Together</h2>
             <p className="quoto">
               Ready to turn ideas into action? Let’s collaborate to bring your
@@ -83,8 +91,14 @@ const Contact = (props) => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="ContactForm">
+          </motion.div>
+          <motion.div
+            variants={fadIn("left", 0.3)}
+            initial="hide"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="ContactForm"
+          >
             <form
               autoComplete="off"
               action="https://formsubmit.co/aditya.khuntia2003@gmail.com"
@@ -112,7 +126,7 @@ const Contact = (props) => {
                 </i>
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

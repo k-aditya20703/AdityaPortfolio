@@ -2,6 +2,8 @@
   width: 89.7%;
   background-color: black;
   padding: 1rem;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .projectSection h2 {
@@ -119,6 +121,11 @@
   transform: translateX(-0.25rem);
 }
 @media screen and (max-width: 512px) {
+  .projectSection {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+  }
   .projectContainer {
     width: 100%;
     margin-right: auto;

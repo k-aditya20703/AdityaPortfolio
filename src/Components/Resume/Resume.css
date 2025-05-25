@@ -40,7 +40,7 @@
   background-color: #252525;
   border: 0.1rem solid #252525;
   cursor: pointer;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 
 .resumeDisplay {

@@ -17,6 +17,8 @@ import Service from "../Service/Service";
 import Contact from "../Contact/Contact";
 import { MdKeyboardArrowDown, MdKeyboardDoubleArrowDown } from "react-icons/md";
 import Resume from "../Resume/Resume";
+import { motion } from "framer-motion";
+import { fadIn } from "../../Animation/variants";
 
 const Home = () => {
   const [home, setHome] = useState(true);
@@ -71,7 +73,13 @@ const Home = () => {
           {home && (
             <>
               <div className="left_section">
-                <div className="download">
+                <motion.div
+                  variants={fadIn("right", 0.3)}
+                  initial="hide"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.7 }}
+                  className="download"
+                >
                   <div className="logo">
                     <img src="./Images/logo.jpg"></img>
                   </div>
@@ -88,9 +96,15 @@ const Home = () => {
                       Download CV <LuDownload />
                     </button>
                   </a>
-                </div>
+                </motion.div>
 
-                <div className="skill_icons">
+                <motion.div
+                  variants={fadIn("right", 0.3)}
+                  initial="hide"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.7 }}
+                  className="skill_icons"
+                >
                   <img src="./Images/html.svg"></img>
                   <img src="./Images/css.svg"></img>
                   <img src="./Images/js.svg"></img>
@@ -108,10 +122,16 @@ const Home = () => {
                     Visit the project section to see the work done with these
                     web technoligies
                   </p>
-                </div>
+                </motion.div>
               </div>
 
-              <div className="middle_section">
+              <motion.div
+                variants={fadIn("down", 0.3)}
+                initial="hide"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="middle_section"
+              >
                 <div className="model">
                   <img src="./Images/model.png"></img>
                   <div>
@@ -156,19 +176,16 @@ const Home = () => {
                     </button>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="right_section">
+              <motion.div
+                variants={fadIn("left", 0.3)}
+                initial="hide"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="right_section"
+              >
                 <div className="education">
-                  {/* <h2
-                    style={{
-                      textAlign: "center",
-                      color: "white",
-                      marginBottom: "1rem",
-                    }}
-                  >
-                    Education
-                  </h2> */}
                   <ul>
                     <li>B.Tech in Computer Science , BPUT(Odisha) </li>
                     <span className="year">(2020 - 2024)</span>
@@ -219,7 +236,7 @@ const Home = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </>
           )}
           {project && <Projects home={handleHome} />}
@@ -227,7 +244,13 @@ const Home = () => {
           {contact && <Contact home={handleHome} />}
           {resume && <Resume home={handleHome} />}
 
-          <div className="sideNav">
+          <motion.div
+            variants={fadIn("down", 0.3)}
+            initial="hide"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="sideNav"
+          >
             <i
               style={{
                 backgroundColor: home ? "white" : "transparent",
@@ -273,7 +296,7 @@ const Home = () => {
             >
               <IoMailOpenOutline />
             </i>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

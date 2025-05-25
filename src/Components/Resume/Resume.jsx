@@ -3,10 +3,12 @@ import "./Resume.css";
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
 import { Education } from "../../Constants/Education";
 import { Skill } from "../../Constants/Skill";
+import { fadIn } from "../../Animation/variants";
+import { motion } from "framer-motion";
 
 const Resume = (props) => {
-  const [education, setEducation] = useState(true);
-  const [skill, setSkill] = useState(false);
+  const [education, setEducation] = useState(false);
+  const [skill, setSkill] = useState(true);
   const [about, setAbout] = useState(false);
 
   const handleEducation = () => {
@@ -49,7 +51,11 @@ const Resume = (props) => {
               develop a real-time project .
             </p>
             <div className="resumeBtnSection">
-              <button
+              <motion.button
+                variants={fadIn("right", 0.3)}
+                initial="hide"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.1 }}
                 onClick={handleEducation}
                 style={{
                   backgroundColor: education ? "white" : "#252525",
@@ -57,8 +63,12 @@ const Resume = (props) => {
                 }}
               >
                 Education
-              </button>
-              <button
+              </motion.button>
+              <motion.button
+                variants={fadIn("right", 0.4)}
+                initial="hide"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.1 }}
                 onClick={handleSkill}
                 style={{
                   backgroundColor: skill ? "white" : "#252525",
@@ -66,8 +76,12 @@ const Resume = (props) => {
                 }}
               >
                 Skills
-              </button>
-              <button
+              </motion.button>
+              <motion.button
+                variants={fadIn("right", 0.5)}
+                initial="hide"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.1 }}
                 onClick={handleAbout}
                 style={{
                   backgroundColor: about ? "white" : "#252525",
@@ -75,12 +89,18 @@ const Resume = (props) => {
                 }}
               >
                 About me
-              </button>
+              </motion.button>
             </div>
           </div>
           <div className="resumeDisplay">
             {education && (
-              <div className="resumeEducation">
+              <motion.div
+                variants={fadIn("left", 0.3)}
+                initial="hide"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.1 }}
+                className="resumeEducation"
+              >
                 {Education.map((education) => {
                   return (
                     <div className="educationCard">
@@ -90,7 +110,7 @@ const Resume = (props) => {
                     </div>
                   );
                 })}
-              </div>
+              </motion.div>
             )}
 
             {skill && (
@@ -111,47 +131,97 @@ const Resume = (props) => {
             {about && (
               <div className="resumeAbout">
                 <ul>
-                  <li>
+                  <motion.li
+                    variants={fadIn("left", 0.3)}
+                    initial="hide"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.1 }}
+                  >
                     <p className="aboutHeading">Name :</p>
                     <p className="aboutValue">Aditya Narayan Khuntia</p>
-                  </li>
-                  <li>
+                  </motion.li>
+                  <motion.li
+                    variants={fadIn("left", 0.3)}
+                    initial="hide"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.1 }}
+                  >
                     <p className="aboutHeading">Contact :</p>
                     <p className="aboutValue">+91 6370093389</p>
-                  </li>
-                  <li>
+                  </motion.li>
+                  <motion.li
+                    variants={fadIn("left", 0.4)}
+                    initial="hide"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.1 }}
+                  >
                     <p className="aboutHeading">E-mail :</p>
                     <p className="aboutValue">aditya.khuntia2003@gmail.com</p>
-                  </li>
-                  <li>
+                  </motion.li>
+                  <motion.li
+                    variants={fadIn("left", 0.4)}
+                    initial="hide"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.1 }}
+                  >
                     <p className="aboutHeading">Age :</p>
                     <p className="aboutValue">23 years old</p>
-                  </li>
-                  <li>
+                  </motion.li>
+                  <motion.li
+                    variants={fadIn("left", 0.5)}
+                    initial="hide"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.1 }}
+                  >
                     <p className="aboutHeading">Gender :</p>
                     <p className="aboutValue">Male</p>
-                  </li>
-                  <li>
+                  </motion.li>
+                  <motion.li
+                    variants={fadIn("left", 0.5)}
+                    initial="hide"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.1 }}
+                  >
                     <p className="aboutHeading">Status :</p>
                     <p className="aboutValue">Single</p>
-                  </li>
-                  <li>
+                  </motion.li>
+                  <motion.li
+                    variants={fadIn("left", 0.6)}
+                    initial="hide"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.1 }}
+                  >
                     <p className="aboutHeading">City :</p>
                     <p className="aboutValue">Hyderabad</p>
-                  </li>
-                  <li>
+                  </motion.li>
+                  <motion.li
+                    variants={fadIn("left", 0.6)}
+                    initial="hide"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.1 }}
+                  >
                     <p className="aboutHeading">Nationality :</p>
                     <p className="aboutValue">Indian</p>
-                  </li>
-                  <li>
+                  </motion.li>
+                  <motion.li
+                    variants={fadIn("left", 0.7)}
+                    initial="hide"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.1 }}
+                  >
                     <p className="aboutHeading">Experience :</p>
                     <p className="aboutValue">Fresher</p>
-                  </li>
+                  </motion.li>
 
-                  <li>
+                  <motion.li
+                    variants={fadIn("left", 0.7)}
+                    initial="hide"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.1 }}
+                  >
                     <p className="aboutHeading">Language :</p>
                     <p className="aboutValue">English, Hindi, Odia</p>
-                  </li>
+                  </motion.li>
                 </ul>
               </div>
             )}

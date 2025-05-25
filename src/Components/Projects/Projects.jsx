@@ -3,6 +3,8 @@ import "./Projects.css";
 import { FaLink } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
+import { motion } from "framer-motion";
+import { fadIn } from "../../Animation/variants";
 
 const Projects = (props) => {
   return (
@@ -19,7 +21,13 @@ const Projects = (props) => {
           </p>
         </div>
         <div className="projectContainer">
-          <div className="card">
+          <motion.div
+            variants={fadIn("up", 0.3)}
+            initial="hide"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="card"
+          >
             <div className="cardImg">
               <img src="./Images/project1.jpg"></img>
             </div>
@@ -41,9 +49,15 @@ const Projects = (props) => {
               <FaLink />
               Visit Project
             </p>
-          </div>
+          </motion.div>
 
-          <div className="card">
+          <motion.div
+            variants={fadIn("up", 0.4)}
+            initial="hide"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="card"
+          >
             <div className="cardImg">
               <img src="./Images/project3.jpg"></img>
             </div>
@@ -65,9 +79,15 @@ const Projects = (props) => {
               <FaLink />
               Visit Project
             </p>
-          </div>
+          </motion.div>
 
-          <div className="card">
+          <motion.div
+            variants={fadIn("up", 0.5)}
+            initial="hide"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="card"
+          >
             <div className="cardImg">
               <img src="./Images/project5.jpg"></img>
             </div>
@@ -89,9 +109,15 @@ const Projects = (props) => {
               <FaLink />
               Visit Project
             </p>
-          </div>
+          </motion.div>
 
-          <div className="card">
+          <motion.div
+            variants={fadIn("up", 0.6)}
+            initial="hide"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="card"
+          >
             <div className="cardImg">
               <img src="./Images/project4.jpg"></img>
             </div>
@@ -113,7 +139,7 @@ const Projects = (props) => {
               <FaLink />
               Visit Project
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

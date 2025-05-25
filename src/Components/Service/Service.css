@@ -1,0 +1,63 @@
+.serviceSection {
+  width: 89.7%;
+  background-color: black;
+  padding: 1rem;
+}
+
+.serviceCard {
+  background-color: #252525;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: white;
+  width: 25%;
+  height: 12.5rem;
+  border: 0.1rem solid #252525;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.serviceCard:hover {
+  border-color: white;
+  transform: translateY(-0.35rem);
+  box-shadow: 0px 3px 5px #ffffff34;
+}
+
+.serviceCard i {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.servicename {
+  font-size: large;
+  font-weight: 500;
+}
+
+.servicedesc {
+  color: #a8a8a8;
+  font-size: small;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.serviceContainer {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 512px) {
+  .serviceCard {
+    background-color: #252525;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    width: 100%;
+    height: 12.5rem;
+  }
+}

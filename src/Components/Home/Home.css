@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: black;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.display {
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sideNav {
+  width: 3%;
+  color: white;
+  background-color: #252525;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: large;
+  border-radius: 5rem;
+  gap: 1.5rem;
+  padding: 1.5rem 0.5rem;
+}
+
+.sideNav i {
+  width: 100%;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sideNav i:hover {
+  background-color: white;
+  color: black;
+}
+
+.left_section {
+  width: 20%;
+  /* background-color: #c20f0f; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 1rem;
+  height: 90vh;
+}
+
+.middle_section {
+  width: 45%;
+  background-color: #252525;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  height: 90vh;
+}
+
+.download {
+  width: 100%;
+  background-color: #252525;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.skill_icons {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #252525;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  font-size: x-large;
+  justify-content: space-evenly;
+}
+.skill_icons img {
+  width: 1.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.skill_icons img:hover {
+  transform: translateY(-0.25rem);
+}
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  width: 10rem;
+}
+
+.modelcv {
+  width: 100%;
+  height: 7rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+  background-image: url(../../../public/Images/Aditya.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.modelcv img {
+  width: 10rem;
+  border-radius: 0.5rem;
+}
+
+.skill_icons p {
+  font-size: small;
+  color: #a8a8a8;
+  font-weight: 500;
+}
+
+.download p {
+  font-size: small;
+  color: #a8a8a8;
+  font-weight: 500;
+}
+
+.download button {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.middle_section .model {
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.middle_section .model h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.middle_section .model img {
+  width: 17rem;
+  filter: drop-shadow(0px 10px 5px #0000005b);
+  position: relative;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+}
+
+.about {
+  font-size: small;
+  color: #a8a8a8;
+  font-weight: 500;
+}
+
+.textSlider {
+  background-color: white;
+  overflow: hidden;
+  width: 18rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.textWrapper {
+  color: black;
+  font-size: small;
+  font-weight: 500;
+  margin-left: 2rem;
+}
+.midBox {
+  width: 95%;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px black;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(10px);
+  padding-bottom: 1.5rem;
+}
+.midBox img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.midBox .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.midBox .action_btn .projects {
+  padding: 0.3rem 2rem;
+  background-color: white;
+  border-radius: 0.25rem;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.midBox .action_btn .service {
+  padding: 0.3rem 2rem;
+  background-color: #000000;
+  border-radius: 0.25rem;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.right_section {
+  width: 20%;
+  /* background-color: #c20f0f; */
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  height: 90vh;
+  justify-content: space-between;
+}
+.education {
+  width: 100%;
+  background-color: #252525;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.contact {
+  width: 100%;
+  background-color: #252525;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.contact p {
+  font-size: small;
+  color: #a8a8a8;
+  font-weight: 400;
+}
+
+.contact_btn {
+  width: 100%;
+  border-radius: 5rem;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact span {
+  font-size: small;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.education ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.education ul .year {
+  font-size: small;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.education ul li {
+  font-size: small;
+  color: #a8a8a8;
+  font-weight: 600;
+  width: 100%;
+}
+
+.education ul li::marker {
+  color: white;
+}
+
+.Watch {
+  width: 100%;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  border-radius: 3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.Watch i {
+  font-size: medium;
+  display: flex;
+  align-items: center;
+}
+
+.contact .socialMedia {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact .socialMedia a {
+  color: black;
+}
+
+.contact .socialMedia .icon {
+  background-color: white;
+  display: flex;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  cursor: pointer;
+  border: 0.1rem solid white;
+  transition: 0.4s;
+}
+
+.contact .socialMedia .icon:hover {
+  background-color: transparent;
+  color: white;
+  box-shadow: 0px 0px 5px white;
+}
+
+@media screen and (max-width: 512px) {
+  .container {
+    background-color: black;
+    width: 100%;
+    min-height: min-content;
+  }
+  .display {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .sideNav {
+    display: none;
+  }
+
+  .left_section {
+    width: 100%;
+    height: auto;
+    order: 2;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .middle_section {
+    width: 100%;
+    height: auto;
+    background-color: #252525;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    order: 1;
+  }
+
+  .middle_section .model {
+    width: 100%;
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .middle_section .model h2 {
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+
+  .middle_section .model img {
+    width: 20rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0px 10px 5px #0000005b);
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .textSlider {
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .textWrapper {
+    color: black;
+    font-size: small;
+    font-weight: 500;
+    margin-left: 2rem;
+  }
+
+  .download {
+    width: 100%;
+    background-color: #252525;
+    border-radius: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .skill_icons {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #252525;
+    border-radius: 1rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    font-size: x-large;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .skill_icons img {
+    width: 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .logo {
+    width: 100%;
+    display: none;
+  }
+  .logo img {
+    width: 100%;
+  }
+
+  .right_section {
+    width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 1rem;
+    order: 3;
+  }
+  .education {
+    width: 100%;
+    background-color: #252525;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .contact {
+    width: 100%;
+    background-color: #252525;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .midBox {
+    margin-top: 1.5rem;
+  }
+}

@@ -1,0 +1,208 @@
+.resumeSection {
+  width: 89.7%;
+  color: white;
+}
+
+.resumeContainer {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.resumeOptions {
+  width: 30%;
+}
+.resumeOptions p {
+  font-size: small;
+  color: #a8a8a8;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.resumeBtnSection {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.resumeBtnSection button {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  color: white;
+  background-color: #252525;
+  border: 0.1rem solid #252525;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.resumeDisplay {
+  width: 70%;
+}
+
+.resumeEducation {
+  width: 100%;
+  height: 25rem;
+  overflow: auto;
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  /* margin-left: 1rem; */
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #252525;
+  border-radius: 5px;
+  border: 2px solid #f0f0f0;
+}
+
+.educationCard {
+  width: 46%;
+  background-color: #252525;
+  border: 0.1rem solid #252525;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 10rem;
+}
+
+.educationCard:hover {
+  border-color: #ffffff;
+}
+
+.educationCard .year {
+  font-weight: 500;
+  width: 100%;
+}
+
+.educationCard .course {
+  font-size: x-large;
+  font-weight: 600;
+  color: #a8a8a8;
+  width: 100%;
+}
+
+.educationCard .source {
+  color: #a8a8a8;
+  width: 100%;
+}
+
+.resumeSkill {
+  width: 100%;
+  height: 25rem;
+  overflow: auto;
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.skillCard {
+  width: 20%;
+  padding: 1rem;
+  background-color: #252525;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.skillCard:hover .skillicon img {
+  transform: translateY(-0.35rem);
+}
+
+.skillicon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skillCard img {
+  width: 3rem;
+  transition: 0.3s;
+}
+
+.resumeAbout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  padding: 1rem;
+}
+
+.resumeAbout ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.resumeAbout ul li {
+  display: flex;
+  width: 45%;
+  gap: 1rem;
+  align-items: center;
+}
+
+.aboutHeading {
+  font-weight: 500;
+}
+
+.aboutValue {
+  font-size: small;
+  color: #a8a8a8;
+}
+@media screen and (max-width: 512px) {
+  .resumeContainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .resumeOptions {
+    width: 100%;
+  }
+  .resumeDisplay {
+    width: 100%;
+  }
+
+  .educationCard {
+    width: 100%;
+  }
+  .skillCard {
+    width: 45%;
+  }
+
+  .resumeAbout ul li {
+    width: 100%;
+  }
+}

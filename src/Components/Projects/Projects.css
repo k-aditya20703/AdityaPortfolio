@@ -1,0 +1,138 @@
+.projectSection {
+  width: 89.7%;
+  background-color: black;
+  padding: 1rem;
+}
+
+.projectSection h2 {
+  color: white;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.projectContainer {
+  width: 100%;
+  /* background-color: red; */
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.projectSection .card {
+  width: 23%;
+  background-color: #252525;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.projectSection .card:hover .cardImg img {
+  transform: scale(1.1);
+}
+
+.cardImg {
+  width: 100%;
+  height: 10rem;
+  background-color: black;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.cardImg img {
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.projectName {
+  color: white;
+  font-size: larger;
+  font-weight: 600;
+}
+.projectDesc {
+  color: #a8a8a8;
+  font-size: small;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.projectSkill {
+  width: 6rem;
+  padding: 0.5rem;
+  background-color: black;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.projectSkill img {
+  width: 0.7rem;
+  transition: 0.4s;
+}
+
+.projectSkill img:hover {
+  transform: translateY(-0.25rem);
+}
+
+.projectLink {
+  color: white;
+  font-size: small;
+  font-weight: 500;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.projectHeader {
+  width: 95%;
+  display: flex;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectHeader p {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.projectHeader p i {
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+}
+.projectHeader p:hover i {
+  transform: translateX(-0.25rem);
+}
+@media screen and (max-width: 512px) {
+  .projectContainer {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+    display: block;
+  }
+
+  .projectSection .card {
+    width: 100%;
+    background-color: #252525;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+}
